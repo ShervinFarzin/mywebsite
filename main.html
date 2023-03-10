@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>HOME PAGE</title>
+	</head>
+	<body>
+		<form action="form2.html" target="_blank" id="form_submit"/>
+		<input id="username" type="text" value="" placeholder="First Name" style="font-size:30px"/><br/>
+		<a onclick="pass_data()"><img src="heart_active.png" style="width:400px;cursor:pointer"/></a>
+	</body>
+</html>
+<script>
+	function pass_data(){
+		localStorage.username = document.getElementById("username").value;
+		document.forms.form_submit.submit();
+	}
+</script>
